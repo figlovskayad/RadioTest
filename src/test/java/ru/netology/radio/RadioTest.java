@@ -19,7 +19,7 @@ public class RadioTest {
 
     @Test
     public void shouldSetPrevZeroStation() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(0);
         radio.prevStation();
@@ -56,7 +56,7 @@ public class RadioTest {
 
     @Test
     public void shouldSetStationAfterNinth() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(10);
 
@@ -68,7 +68,7 @@ public class RadioTest {
 
     @Test
     public void shouldSetNextStationAfterNinth() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(10);
 
         radio.setCurrentStation(9);
         radio.nextStation();
